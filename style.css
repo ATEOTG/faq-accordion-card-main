@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 :root {
-  --soft-blue: hsl(240, 73%, 65%);
-  --soft-purple: hsl(273, 75%, 66%);
-  --soft-orange: hsl(14, 88%, 65%);
-  --dark-blue: hsl(238, 29%, 16%);
-  --very-drk-gray-blue: hsl(237, 12%, 33%);
-  --drk-gray-blue: hsl(240, 6%, 50%);
-  --lght-gray-blue: hsl(240, 5%, 91%);
+  --soft-blue: #6565e7;
+  --soft-purple: #af67e9;
+  --soft-orange: #f47c57;
+  --dark-blue: #1d1e35;
+  --very-drk-gray-blue: #4a4b5e;
+  --drk-gray-blue: #787887;
+  --lght-gray-blue: #e7e7e9;
 }
 
 * {
@@ -21,4 +21,94 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(#af67e9, #6565e7);
+  height: 100vh;
+  min-height: 50rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: inherit;
+  overflow-y: scroll;
+}
+
+.main-container {
+  position: relative;
+  margin-top: 15rem;
+  padding: 13rem 2.5rem 5rem 2.5rem;
+  border-radius: 2.3rem;
+  background-color: var(--lght-gray-blue);
+  box-shadow: 0rem 4rem 2rem -2rem #1d1e354d;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* padding: 1rem; */
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accordion__header:hover .accordion__title {
+  color: var(--soft-orange);
+}
+
+.accordion__title {
+  font-size: 1.3rem;
+  color: var(--very-drk-gray-blue);
+  transition: 0.3s;
+}
+
+.accordion__text {
+  font-size: 1.2rem;
+  width: 85%;
+  color: var(--drk-gray-blue);
+  display: none;
+}
+
+.accordion__border {
+  border-bottom: 1px solid #78788725;
+}
+
+.mobile-cont {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(17%, -60%);
+}
+
+.mobile-img-cont {
+  position: relative;
+}
+
+.mobile-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translate(-1%, 100%);
+}
+.mobile-main-img {
+  width: 90%;
 }
