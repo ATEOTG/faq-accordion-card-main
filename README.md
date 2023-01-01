@@ -2,6 +2,8 @@
 
 A FAQ accordion component
 
+Site: https://ateotg.github.io/faq-accordion-card-main/
+
 ### Screenshot
 
 ## Mobile
