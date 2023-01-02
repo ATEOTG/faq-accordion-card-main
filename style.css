@@ -58,7 +58,6 @@ h1 {
 .accordion {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 .accordion__header {
@@ -67,6 +66,7 @@ h1 {
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
+  padding-bottom: 1.5rem;
 }
 
 .accordion__header:hover .accordion__title {
@@ -97,11 +97,16 @@ h1 {
   font-size: 1.2rem;
   width: 90%;
   color: var(--drk-gray-blue);
-  display: none;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
 }
 
 .accordion__text.is-active {
-  display: block;
+  height: 40px;
+  opacity: 1;
+  margin-bottom: 1.5rem;
 }
 
 .accordion__border {
