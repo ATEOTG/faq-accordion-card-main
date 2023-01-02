@@ -38,7 +38,7 @@ body {
   margin: 15rem auto 0 auto;
   padding: 12rem 2.5rem 5rem 2.5rem;
   border-radius: 2.3rem;
-  background-color: var(--lght-gray-blue);
+  background-color: #f2f2f2;
   box-shadow: 0rem 4rem 2rem -2rem #1d1e354d;
   max-width: 54.6rem;
 }
